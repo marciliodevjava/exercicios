@@ -1,0 +1,13 @@
+package classe;
+
+public class ValorNulo {
+	
+	public static void main(String[] args) {
+		
+		String s1 = "";
+		System.out.println(s1.concat("!!!!"));
+		
+		String s2 = null;// Error de runtime
+		System.out.println(s2.concat("????"));
+	}
+}
