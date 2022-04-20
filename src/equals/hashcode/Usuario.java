@@ -21,5 +21,11 @@ public class Usuario {
 		} else {
 			return false;
 		}
+
+	}
+	//O hashCode sera abordado na proxima aula
+	
+	public int hashCode() {
+		return this.nome.length();
 	}
 }
