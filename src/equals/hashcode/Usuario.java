@@ -7,10 +7,15 @@ public class Usuario {
 
 	@Override
 	public boolean equals(Object objeto) {
-		if (objeto instanceof Usuario) {
-			Usuario outro = (Usuario) objeto;
-			return super.equals(objeto);
-		}
-		return false;
+//		jeito correto de se fazer
+//		if (objeto instanceof Usuario) {
+//			Usuario outro = (Usuario) objeto;
+//			return super.equals(objeto);
+//		}
+//		return false;
+		Usuario outro = (Usuario) objeto;
+		boolean nomeIgual = outro.nome.equals(this.nome);
+		boolean emailIgual = outro.email.equals(this.email);
+		return nomeIgual && emailIgual;
 	}
 }
