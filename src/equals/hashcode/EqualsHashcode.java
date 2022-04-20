@@ -1,4 +1,4 @@
-package classe;
+package equals.hashcode;
 
 public class EqualsHashcode {
 
