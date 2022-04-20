@@ -3,7 +3,8 @@ package classe;
 public class EqualsHashcode {
 
 	public static void main(String[] args) {
-
+		
+		//Utilizando o Equals e Hashcode
 		Usuario u1 = new Usuario();
 		u1.nome = "Pedro Silva";
 		u1.email = "pedro.silva@ezemail.com.br";
