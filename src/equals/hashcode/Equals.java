@@ -17,7 +17,7 @@ public class Equals {
 		System.out.println(u1.equals(u2));
 		System.out.println(u2.equals(u1));
 
-		System.out.println(u2.equals(new Data()));
+		//System.out.println(u2.equals(new Data()));
 
 	}
 }
