@@ -13,9 +13,13 @@ public class Usuario {
 //			return super.equals(objeto);
 //		}
 //		return false;
-		Usuario outro = (Usuario) objeto;
-		boolean nomeIgual = outro.nome.equals(this.nome);
-		boolean emailIgual = outro.email.equals(this.email);
-		return nomeIgual && emailIgual;
+		if (objeto instanceof Usuario) {
+			Usuario outro = (Usuario) objeto;
+			boolean nomeIgual = outro.nome.equals(this.nome);
+			boolean emailIgual = outro.email.equals(this.email);
+			return nomeIgual && emailIgual;
+		} else {
+			return false;
+		}
 	}
 }
