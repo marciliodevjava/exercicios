@@ -30,5 +30,14 @@ public class ConjuntoBaguncado {
 		nums.add(3);
 		System.out.println(nums);// listando
 		System.out.println(conjunto);// listando
+
+		// conjunto.addAll(nums);// Uni porem excluie paramentros repetidos
+		System.out.println(conjunto);
+		conjunto.retainAll(nums);// mostra somente os parametros iguais dos dois conjuntos.
+		System.out.println(conjunto);
+
+		conjunto.clear();
+		System.out.println("Limpando " + conjunto);
+
 	}
 }
