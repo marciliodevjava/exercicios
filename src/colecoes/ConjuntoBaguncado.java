@@ -1,6 +1,7 @@
 package colecoes;
 
 import java.util.HashSet;
+import java.util.Set;
 
 public class ConjuntoBaguncado {
 	public static void main(String[] args) {
@@ -23,6 +24,11 @@ public class ConjuntoBaguncado {
 
 		System.out.println(conjunto.contains(1.2));
 
-		HashSet nums = new HashSet();
+		Set nums = new HashSet();// Conceito valido
+		nums.add(1);
+		nums.add(2);
+		nums.add(3);
+		System.out.println(nums);// listando
+		System.out.println(conjunto);// listando
 	}
 }
